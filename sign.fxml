@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SignController">
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" prefHeight="54.0" prefWidth="505.0" text="E Book" textFill="#d74f7c">
+            <font>
+                <Font name="Edwardian Script ITC" size="100.0" />
+            </font>
+        </Label>
+        <Label layoutX="64.0" layoutY="152.0" prefHeight="55.0" prefWidth="271.0" text="Registartion">
+            <font>
+                <Font name="Berlin Sans FB" size="50.0" />
+            </font>
+        </Label>
+        <Label layoutX="83.0" layoutY="297.0" prefHeight="39.0" prefWidth="117.0" text="First Name:">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="83.0" layoutY="361.0" prefHeight="39.0" prefWidth="117.0" text="Last Name:">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="83.0" layoutY="531.0" prefHeight="39.0" prefWidth="117.0" text="Password:">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="signup" layoutX="300.0" layoutY="623.0" mnemonicParsing="false" onAction="#signUp" prefHeight="53.0" prefWidth="145.0" style="-fx-background-color: #f5f5f5;" text="Sign Up" textFill="#d74f7c">
+            <font>
+                <Font name="Berlin Sans FB" size="30.0" />
+            </font>
+        </Button>
+        <Button fx:id="back" layoutX="153.0" layoutY="623.0" mnemonicParsing="false" onAction="#back" prefHeight="53.0" prefWidth="145.0" style="-fx-background-color: #f5f5f5;" text="Back" textFill="#d74f7c">
+            <font>
+                <Font name="Berlin Sans FB" size="30.0" />
+            </font>
+        </Button>
+        <TextField fx:id="Firstname" layoutX="225.0" layoutY="304.0" prefHeight="25.0" prefWidth="215.0" />
+        <TextField fx:id="Lastname" layoutX="225.0" layoutY="368.0" prefHeight="25.0" prefWidth="215.0" />
+        <PasswordField fx:id="password" layoutX="224.0" layoutY="538.0" prefHeight="25.0" prefWidth="215.0" />
+        <ImageView fitHeight="551.0" fitWidth="692.0" layoutX="644.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img_5.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="83.0" layoutY="419.0" prefHeight="39.0" prefWidth="117.0" text="Login:">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="logon" layoutX="224.0" layoutY="426.0" prefHeight="25.0" prefWidth="215.0" />
+        <Label layoutX="83.0" layoutY="474.0" prefHeight="39.0" prefWidth="117.0" text="Email:">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="emails" layoutX="228.0" layoutY="481.0" prefHeight="25.0" prefWidth="215.0" />
+    </children>
+</Pane>

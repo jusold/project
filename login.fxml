@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1315.0" style="-fx-background-color: WhiteSmoke;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.loginController">
+    <children>
+        <ImageView fitHeight="551.0" fitWidth="692.0" layoutX="654.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img_5.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="24.0" layoutY="24.0" prefHeight="54.0" prefWidth="505.0" text="E Book" textFill="#d74f7c">
+            <font>
+                <Font name="Edwardian Script ITC" size="100.0" />
+            </font>
+        </Label>
+        <Label layoutX="74.0" layoutY="162.0" prefHeight="55.0" prefWidth="271.0" text="Login:" textFill="#220101">
+            <font>
+                <Font name="Berlin Sans FB" size="50.0" />
+            </font>
+        </Label>
+        <Label layoutX="93.0" layoutY="331.0" prefHeight="39.0" prefWidth="117.0" text="Login:">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="logins" layoutX="210.0" layoutY="338.0" prefHeight="25.0" prefWidth="215.0" />
+        <Label layoutX="86.0" layoutY="411.0" prefHeight="39.0" prefWidth="117.0" text="Password:">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="passwords" layoutX="210.0" layoutY="418.0" prefHeight="25.0" prefWidth="215.0" />
+        <Button fx:id="log" layoutX="300.0" layoutY="505.0" mnemonicParsing="false" onAction="#logout" prefHeight="53.0" prefWidth="145.0" style="-fx-background-color: #f5f5f5;" text="Log In" textFill="#d74f7c">
+            <font>
+                <Font name="Berlin Sans FB" size="30.0" />
+            </font>
+        </Button>
+        <Button fx:id="back" layoutX="153.0" layoutY="505.0" mnemonicParsing="false" onAction="#back" prefHeight="53.0" prefWidth="145.0" style="-fx-background-color: #f5f5f5;" text="Back" textFill="#d74f7c">
+            <font>
+                <Font name="Berlin Sans FB" size="30.0" />
+            </font>
+        </Button>
+    </children>
+</Pane>

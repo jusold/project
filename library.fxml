@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LibraryController">
+    <children>
+        <Text fill="#d74f7c" layoutX="30.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD NEW BOOK" textAlignment="CENTER" translateX="25.0" translateY="140.0" wrappingWidth="149.0">
+            <font>
+                <Font name="Berlin Sans FB Bold" size="19.0" />
+            </font>
+        </Text>
+        <TextField fx:id="author" layoutX="30.0" layoutY="98.0" prefHeight="40.0" prefWidth="201.0" promptText="Author name" translateY="160.0" />
+        <TextField fx:id="title" layoutX="30.0" layoutY="143.0" prefHeight="40.0" prefWidth="201.0" promptText="Title" translateY="170.0" />
+        <TextArea fx:id="content" layoutX="30.0" layoutY="191.0" prefHeight="40.0" prefWidth="201.0" promptText="Content" translateY="180.0" />
+        <TextField fx:id="styles" layoutX="30.0" layoutY="239.0" prefHeight="40.0" prefWidth="201.0" promptText="Styles" translateY="190.0" />
+        <Button layoutX="62.0" layoutY="294.0" mnemonicParsing="false" onAction="#addItem" style="-fx-background-color: #f5f5f5;" text="Add book" textFill="#d74f7c" translateX="5.0" translateY="200.0">
+            <font>
+                <Font name="Berlin Sans FB" size="25.0" />
+            </font>
+        </Button>
+        <ListView fx:id="booksList" layoutX="359.0" layoutY="91.0" prefHeight="430.0" prefWidth="618.0" stylesheets="@listview.css" translateY="100.0" />
+        <Text fill="#d74f7c" layoutX="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title " translateY="150.0" wrappingWidth="249.0">
+            <font>
+                <Font name="Berlin Sans FB Bold" size="25.0" />
+            </font>
+        </Text>
+        <TextField fx:id="search" layoutX="598.0" layoutY="50.0" onKeyTyped="#searchBook" prefHeight="31.0" prefWidth="201.0" promptText="Search..." />
+        <Button fx:id="edit" layoutX="809.0" layoutY="47.0" mnemonicParsing="false" onAction="#editBook" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #f5f5f5;" text="Edit" textFill="#d74f7c" translateY="80.0">
+            <font>
+                <Font name="Berlin Sans FB" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="delete" layoutX="871.0" layoutY="47.0" mnemonicParsing="false" onAction="#deleteBook" style="-fx-background-color: #f5f5f5;" text="Delete" textFill="#d74f7c" translateX="15.0" translateY="80.0">
+            <font>
+                <Font name="Berlin Sans FB" size="20.0" />
+            </font>
+        </Button>
+      <Label layoutX="59.0" layoutY="41.0" text="E Book" textFill="#d74f7c">
+         <font>
+            <Font name="Edwardian Script ITC" size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="import" layoutX="739.0" layoutY="133.0" mnemonicParsing="false" onAction="#importData" style="-fx-background-color: #f5f5f5;" text="Import" textFill="#d74f7c" translateX="-10.0" translateY="-7.0">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="read" layoutX="657.0" layoutY="133.0" mnemonicParsing="false" onAction="#readBook" style="-fx-background-color: #f5f5f5;" text="Read" textFill="#d74f7c" translateY="-7.0">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

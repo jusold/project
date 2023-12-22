@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <children>
+        <Pane layoutX="-1.0" prefHeight="890.0" prefWidth="1315.0" style="-fx-background-color: white;">
+            <children>
+                <Label fx:id="wel" layoutX="290.0" layoutY="64.0" prefHeight="138.0" prefWidth="839.0" text="Welcome to E Book " textFill="#d74f7c">
+                    <font>
+                        <Font name="Edwardian Script ITC" size="100.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="464.0" fitWidth="484.0" layoutX="416.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img_2.png" />
+                    </image>
+                </ImageView>
+                <Button  onAction="#onStartButtonClick" layoutX="707.0" layoutY="712.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="145.0" style="-fx-background-color: White;" text="Start" textFill="#d74f7c" translateX="-110.0">
+                    <font>
+                        <Font name="Berlin Sans FB" size="30.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
